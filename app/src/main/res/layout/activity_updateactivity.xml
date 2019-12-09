@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood"
+    android:orientation="vertical"
+    tools:context=".updateactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/edname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="Enter Name"
+            android:textColorHint="@android:color/holo_green_dark"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_weight="0">
+
+        <RadioGroup
+            android:id="@+id/catradiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/getdetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RadioButton
+                android:id="@+id/crbworking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_blue_light"
+                android:text="Company"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/crbworkingcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_blue_light"
+                android:text="Whatsapp Number"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbalternate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_blue_light"
+                android:text="Alternate Number"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_blue_light"
+                android:text="Email"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rblinkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_blue_light"
+                android:text="Working City"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_blue_light"
+                android:text="Address"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/edalter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:hint="Alter Text"
+            android:textColorHint="@android:color/holo_green_dark"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/updatebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:text="UPDATE" />
+    </LinearLayout>
+</LinearLayout>
