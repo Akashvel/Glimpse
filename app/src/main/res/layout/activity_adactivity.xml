@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".adactivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,11 +25,14 @@
 
         <EditText
             android:id="@+id/ename"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/white"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout
@@ -47,11 +51,14 @@
 
         <EditText
             android:id="@+id/ewhatsapp"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/white"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout
@@ -70,11 +77,14 @@
 
         <EditText
             android:id="@+id/ealternate"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/white"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout
@@ -93,11 +103,16 @@
 
         <EditText
             android:id="@+id/eemail"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/white"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+
     </LinearLayout>
 
     <LinearLayout
@@ -116,11 +131,14 @@
 
         <EditText
             android:id="@+id/elinkedin"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/white"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout
@@ -139,11 +157,14 @@
 
         <EditText
             android:id="@+id/eworking"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/white"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout
@@ -162,11 +183,14 @@
 
         <EditText
             android:id="@+id/eworkingcity"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/white"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout
@@ -194,7 +218,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="15dp"
             android:backgroundTint="@android:color/white"
             android:textColor="@android:color/white"
             android:textSize="20dp" />
@@ -210,7 +234,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="15dp"
             android:backgroundTint="@android:color/white"
             android:textColor="@android:color/white"
             android:textSize="20dp" />
@@ -238,7 +262,6 @@
             android:layout_weight="1"
             android:text="ADD TO CONTACT" />
     </LinearLayout>
-
 
 
 </LinearLayout>

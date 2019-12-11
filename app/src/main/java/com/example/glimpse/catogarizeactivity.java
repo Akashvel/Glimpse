@@ -3,10 +3,12 @@ package com.example.glimpse;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,6 +36,8 @@ public class catogarizeactivity extends AppCompatActivity {
         Catrg=(RadioGroup)findViewById(R.id.catradiogroup);
         rb1=(RadioButton)findViewById(R.id.crbworking);
         rb2=(RadioButton)findViewById(R.id.crbworkingcity);
+        final Vibrator vibe = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,6 +56,7 @@ public class catogarizeactivity extends AppCompatActivity {
                     }
 
                     if(s1.equals("")){
+                        vibe.vibrate(100);
                         Toast.makeText(getApplicationContext(), "ENTER NAME", Toast.LENGTH_LONG).show();
                     }
                     else {
@@ -66,6 +71,7 @@ public class catogarizeactivity extends AppCompatActivity {
                     }
                 }
                 else{
+                    vibe.vibrate(100);
                     Toast.makeText(getApplicationContext(), "SELECT OPTION", Toast.LENGTH_LONG).show();
                 }
             }

@@ -51,6 +51,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery("select *from user where name=?",new String[]{str},null);
         return cursor;
     }
+    public Cursor contacts(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("select *from user order by name asc",null);
+        return cursor;
+    }
+    public Cursor contactsimilar(String s1){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("select * from user where name like ? order by name asc",new String[]{"%"+s1+"%"},null);
+        return cursor;
+    }
+
     public void update(String s1,String s2,int flag){
         SQLiteDatabase db = this.getWritableDatabase();
         String query;

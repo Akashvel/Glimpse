@@ -2,7 +2,9 @@ package com.example.glimpse;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,6 +27,7 @@ public class updateactivity extends AppCompatActivity {
         e1=(EditText)findViewById(R.id.edname);
         e2=(EditText)findViewById(R.id.edalter);
         b1=(Button)findViewById(R.id.updatebutton);
+        final Vibrator vibe = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,6 +57,7 @@ public class updateactivity extends AppCompatActivity {
                     }
                     Boolean chkname = db.chkname(s1);
                     if(chkname==true){
+                        vibe.vibrate(100);
                         Toast.makeText(getApplicationContext(),"USER NOT FOUND",Toast.LENGTH_LONG).show();
                     }
                     else{
@@ -64,6 +68,7 @@ public class updateactivity extends AppCompatActivity {
                     }
                 }
                 else{
+                    vibe.vibrate(100);
                     Toast.makeText(getApplicationContext(), "SELECT OPTION", Toast.LENGTH_LONG).show();
                 }
 

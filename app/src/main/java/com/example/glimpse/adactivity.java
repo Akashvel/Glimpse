@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.ContentProviderOperation;
 import android.content.ContentResolver;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
@@ -35,6 +37,7 @@ public class adactivity extends AppCompatActivity {
         e9=(EditText)findViewById(R.id.eaddress2);
         b1=(Button)findViewById(R.id.aduser);
         b2=(Button)findViewById(R.id.adtocontact);
+        final Vibrator vibe = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,6 +52,7 @@ public class adactivity extends AppCompatActivity {
                 String s9 = e9.getText().toString().trim().toLowerCase();
                 String s10 = s8+" "+s9;
                 if(s1.equals("")){
+                    vibe.vibrate(100);
                     Toast.makeText(getApplicationContext(),"ENTER NAME",Toast.LENGTH_LONG).show();
                 }
                 else{
@@ -60,6 +64,7 @@ public class adactivity extends AppCompatActivity {
                         }
                     }
                     else{
+                        vibe.vibrate(100);
                         Toast.makeText(getApplicationContext(),"ALREADY USER NAME EXIST",Toast.LENGTH_LONG).show();
                     }
                 }
